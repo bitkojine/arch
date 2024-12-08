@@ -1,5 +1,14 @@
 # arch
 
+🎧 Bluetooth
+```
+sudo pacman -Syu
+sudo pacman -S bluez
+sudo pacman -S bluez-utils
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
+```
+
 🧱 UFW notes:
 ```
 sudo ufw default deny outgoing
