@@ -8,81 +8,8 @@
     },
     "bootloader": "Systemd-boot",
     "config_version": "3.0.1",
-    "disk_config": {
-        "config_type": "default_layout",
-        "device_modifications": [
-            {
-                "device": "/dev/nvme0n1",
-                "partitions": [
-                    {
-                        "btrfs": [],
-                        "dev_path": null,
-                        "flags": [
-                            "boot",
-                            "esp"
-                        ],
-                        "fs_type": "fat32",
-                        "mount_options": [],
-                        "mountpoint": "/boot",
-                        "obj_id": "414e4907-4dc0-464a-a2ca-184586cf8ba3",
-                        "size": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "GiB",
-                            "value": 1
-                        },
-                        "start": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "MiB",
-                            "value": 1
-                        },
-                        "status": "create",
-                        "type": "primary"
-                    },
-                    {
-                        "btrfs": [],
-                        "dev_path": null,
-                        "flags": [],
-                        "fs_type": "ext4",
-                        "mount_options": [],
-                        "mountpoint": "/",
-                        "obj_id": "78313ca4-4264-4ef8-8024-f7ba09999f0b",
-                        "size": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "B",
-                            "value": 1023133704192
-                        },
-                        "start": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "B",
-                            "value": 1074790400
-                        },
-                        "status": "create",
-                        "type": "primary"
-                    }
-                ],
-                "wipe": true
-            }
-        ]
-    },
-    "disk_encryption": {
-        "encryption_type": "luks",
-        "lvm_volumes": [],
-        "partitions": [
-            "78313ca4-4264-4ef8-8024-f7ba09999f0b"
-        ]
-    },
+    "disk_config": null,
+    "disk_encryption": null,
     "hostname": "computer",
     "kernels": [
         "linux"
@@ -94,12 +21,7 @@
     },
     "mirror_config": {
         "custom_mirrors": [],
-        "mirror_regions": {
-            "Lithuania": [
-                "{\"url\":\"http://mirrors.atviras.lt/archlinux/\",\"protocol\":\"http\",\"active\":true,\"country\":\"Lithuania\",\"country_code\":\"LT\",\"isos\":true,\"ipv4\":true,\"ipv6\":false,\"details\":\"https://archlinux.org/mirrors/atviras.lt/691/\",\"delay\":65,\"last_sync\":\"2024-12-09T14:53:58Z\",\"duration_avg\":0.31916444427088686,\"duration_stddev\":0.3693604727936757,\"completion_pct\":1.0,\"score\":1}",
-                "{\"url\":\"https://mirrors.atviras.lt/archlinux/\",\"protocol\":\"https\",\"active\":true,\"country\":\"Lithuania\",\"country_code\":\"LT\",\"isos\":true,\"ipv4\":true,\"ipv6\":false,\"details\":\"https://archlinux.org/mirrors/atviras.lt/894/\",\"delay\":64,\"last_sync\":\"2024-12-09T14:53:58Z\",\"duration_avg\":0.32306499983135023,\"duration_stddev\":0.30348609239826,\"completion_pct\":1.0,\"score\":1}"
-            ]
-        }
+        "mirror_regions": {}
     },
     "network_config": {
         "type": "iso"
@@ -125,6 +47,6 @@
     "save_config": null,
     "swap": true,
     "timezone": "Europe/Vilnius",
-    "uki": false,
+    "uki": true,
     "version": "3.0.1"
 }
