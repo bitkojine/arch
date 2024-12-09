@@ -19,6 +19,7 @@ sudo ufw default deny outgoing
 sudo ufw default deny incoming
 sudo ufw allow out DNS
 sudo ufw allow out WWW\ Full
+sudo systemctl enable ufw.service
 sudo ufw enable
 
 sudo ufw status verbose
