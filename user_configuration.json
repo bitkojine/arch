@@ -12,7 +12,7 @@
     "disk_encryption": null,
     "hostname": "computer",
     "kernels": [
-        "linux"
+        "linux-zen"
     ],
     "locale_config": {
         "kb_layout": "us",
@@ -47,6 +47,6 @@
     "save_config": null,
     "swap": true,
     "timezone": "Europe/Vilnius",
-    "uki": true,
+    "uki": false,
     "version": "3.0.1"
 }
