@@ -35,7 +35,8 @@
         "git",
         "keychain",
         "less",
-        "ufw"
+        "ufw",
+        "pinta"
     ],
     "parallel downloads": 0,
     "profile_config": {
