@@ -1,3 +1,4 @@
+```
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
@@ -8,3 +9,4 @@ sudo ufw allow out DNS
 sudo ufw allow out WWW\ Full
 sudo ufw allow out SSH
 sudo ufw enable
+```
