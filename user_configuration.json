@@ -28,7 +28,14 @@
     },
     "ntp": true,
     "packages": [
-        "chromium"
+        "archinstall",
+        "bluez-utils",
+        "chromium",
+        "code",
+        "git",
+        "keychain",
+        "less",
+        "ufw"
     ],
     "parallel downloads": 0,
     "profile_config": {
